@@ -62,3 +62,10 @@ class Token(BaseModel):
 class TokenData(BaseModel):
     email: Optional[str] = None
     role: Optional[str] = None
+    
+    
+#geo tag 
+class LocationCheck(BaseModel):
+    latitude: float
+    longitude: float
+    target_city: str # The city they want to chat in (e.g., "Goa")
